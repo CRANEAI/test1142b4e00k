@@ -15,10 +15,10 @@
             //Parent Components
         //----------------------------------------------------------------------------------------------------------
         
-        import composite from './components/composite.jsx'
-import live from './components/live.jsx'
+        import live from './components/live.jsx'
 import sign_up from './components/sign up.jsx'
 import search from './components/search.jsx'
+import composite from './components/composite.jsx'
        
         //----------------------------------------------------------------------------------------------------------
         //Reducer
@@ -39,11 +39,11 @@ import search from './components/search.jsx'
         
                 <Router basename="/" history={ history } >
                     <Switch>
-                        <Route path "/" component={composite}
-                        <Route path="/composite" component={composite} /> 
-,<Route path="/live" component={live} /> 
+                        <Route path "/" component={live}
+                        <Route path="/live" component={live} /> 
 ,<Route path="/sign_up" component={sign_up} /> 
 ,<Route path="/search" component={search} /> 
+,<Route path="/composite" component={composite} /> 
 
                     </Switch>
                 </Router>
